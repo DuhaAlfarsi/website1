@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(img/vintage-grunge-blue-concrete-texture-wall-background-with-vignette_1258-28373.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.logo {
+  color: cadetblue;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.search {
+  position: relative;
+}
+
+.search input {
+  background: transparent;
+  border: 1px solid cadetblue;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.search .btn{
+  position: absolute;
+  background: cadetblue;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 60px;
+}

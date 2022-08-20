@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(img/vintage-grunge-blue-concrete-texture-wall-background-with-vignette_1258-28373.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
+  width: 100%;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.logo {
+  color: cadetblue;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.menu ul li {
+  list-style: none;
+  text-align: center;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.search {
+  position: relative;
+  justify-content: center;
+}
+
+.search input {
+  background: transparent;
+  border: 1px solid cadetblue;
+  border-radius: 5px;
+  height: 30px;
+  padding: 8px;
+}
+
+.search .btn {
+  position: absolute;
+  background: cadetblue;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 60px;
+  left: 133px;
+  cursor: pointer;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  justify-content: center;
+  margin-top: 189px;
+  width: 100%;
+}
+
+.container .rightside {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+}
+
+.container .rightside h1 span {
+  color: cadetblue;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+
+.container .rightside h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 200;
+}
+.container .rightside button {
+  background: cadetblue;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+.container .leftside form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  background-color: black;
+  border-radius: 5px;
+  padding: 38px;
+}
+
+.leftside form input {
+  background: transparent;
+  color: darkgrey;
+  border: none;
+  border-bottom: 1px solid cadetblue;
+  outline: none;
+}
+.leftside form button {
+  background: cadetblue;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  color: white;
+  width: 100px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.leftside h2 {
+  color: white;
+  font-size: 10px;
+  font-weight: 200;
+}
+
+.leftside h3 {
+  color: cadetblue;
+  font-size: 10px;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.leftside h4 {
+  color: white;
+  font-size: 10px;
+  font-weight: 200;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  color: white;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    max-width: 400px;
+    width: 100%;
+  }
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .search {
+    position: relative;
+    margin-top: 10px;
+    justify-content: center;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .container .rightside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container .rightside h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+  }
+}
